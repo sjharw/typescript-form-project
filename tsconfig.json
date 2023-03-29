@@ -1,0 +1,21 @@
+{
+  // JSON configuration file for TypeScript compiler
+    "compilerOptions": {
+      "target": "es5", // version of javascript to use with browser
+      // "module": "commonjs", // not being used as implementing webpack which uses es6 module
+      "rootDir": "./src",
+      "sourceMap": true, //  generate a source map
+      "outDir": "./dist/", // folder that will contain compiled javascript files
+      "noEmitOnError": true, // dont generate javascript file if there are errors in typescript
+      "lib": ["ES2015", "dom"],
+      // for webpack
+      "noImplicitAny": true,
+      "module": "es6",
+      "jsx": "react",
+      "allowJs": true,
+      "moduleResolution": "node"
+    },
+    "include": [
+      "src/**/*" ] // folder where the typescript files are located
+  }
+  
